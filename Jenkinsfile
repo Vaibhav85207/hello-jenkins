@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Pull Code') {
             steps {
-                git 'https://github.com/Vaibhav85207/hello-jenkins.git'
+                git branch: 'main', url: 'https://github.com/Vaibhav85207/hello-jenkins.git'
             }
         }
 
